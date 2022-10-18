@@ -4,7 +4,7 @@
 
 Deploy ChiefOnboarding server with CI/CD on Elestio
 
-<img src="chiefonboarding.jpg" style='width: 100%;'/>
+<img src="chiefonboarding.png" style='width: 100%;'/>
 <br/>
 <br/>
 
