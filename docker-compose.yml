@@ -17,7 +17,7 @@ services:
     image: chiefonboarding/chiefonboarding:latest
     restart: always
     ports:
-      - "172.17.0.1:8888:8000"
+      - "172.17.0.1:28888:8000"
     environment:
       - SECRET_KEY=somethingsupersecret
       - DATABASE_URL=postgres://postgres:postgres@db:5432/chiefonboarding
