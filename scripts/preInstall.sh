@@ -3,5 +3,5 @@
 
 # apt install -y cerbot
 
-mkdir -p ./data
-chown -R 1000:1000 ./data
+# mkdir -p ./data
+# chown -R 1000:1000 ./data
