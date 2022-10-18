@@ -2,7 +2,7 @@ ports:
   - protocol: "HTTPS"
     targetProtocol: "HTTP"
     listeningPort: "443"
-    targetPort: "8888"
+    targetPort: "88888"
     targetIP: "172.17.0.1"
     public: true
     path: "/"
@@ -27,7 +27,7 @@ config:
   buildDir: "/"
   runCommand: "docker-compose up -d"
   icon: ""
-  screenshot: "chiefonboarding.jpg"
+  screenshot: "chiefonboarding.png"
 lifeCycleConfig:
   preInstallCommand: "./scripts/preInstall.sh"
   postInstallCommand: "./scripts/postInstall.sh"
