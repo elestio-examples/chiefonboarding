@@ -12,9 +12,9 @@ environments:
     value: "random_password"
   - key: "DOMAIN"
     value: "[CI_CD_DOMAIN]"
-  - key: "ACCOUNT_EMAIL"
+  - key: "ADMIN_EMAIL"
     value: "[EMAIL]"
-  - key: "ACCOUNT_PASSWORD"
+  - key: "ADMIN_PASSWORD"
     value: "random_password"
 
 config:
@@ -36,5 +36,5 @@ lifeCycleConfig:
 webUI:
   - url: "https://[CI_CD_DOMAIN]"
     label: "ChiefOnboarding Admin"
-    login: "root"
+    login: "[ADMIN_EMAIL]"
     password: "[ADMIN_PASSWORD]"

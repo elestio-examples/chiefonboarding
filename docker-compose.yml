@@ -20,7 +20,7 @@ services:
       - SECRET_KEY=${SECRET_KEY}
       - DATABASE_URL=postgres://postgres:postgres@db:5432/chiefonboarding
       - ALLOWED_HOSTS=${DOMAIN}
-      - ACCOUNT_EMAIL=${ACCOUNT_EMAIL}
-      - ACCOUNT_PASSWORD=${ACCOUNT_PASSWORD}
+      - ACCOUNT_EMAIL=${ADMIN_EMAIL}
+      - ACCOUNT_PASSWORD=${ADMIN_PASSWORD}
     depends_on:
       - db

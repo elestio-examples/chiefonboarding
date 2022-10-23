@@ -13,5 +13,5 @@ Deploy ChiefOnboarding server with CI/CD on Elestio
 You can can open Jenkins UI here:
 
     URL: https://[CI_CD_DOMAIN]
-    email: [ACCOUNT_EMAIL]
-    password: [ACCOUNT_PASSWORD]
+    email: [ADMIN_EMAIL]
+    password: [ADMIN_PASSWORD]
