@@ -17,8 +17,10 @@ services:
     ports:
       - "172.17.0.1:8888:8000"
     environment:
-      - SECRET_KEY=${ADMIN_PASSWORD}
+      - SECRET_KEY=${SECRET_KEY}
       - DATABASE_URL=postgres://postgres:postgres@db:5432/chiefonboarding
       - ALLOWED_HOSTS=${DOMAIN}
+      - ACCOUNT_EMAIL=${ACCOUNT_EMAIL}
+      - ACCOUNT_PASSWORD=${ACCOUNT_PASSWORD}
     depends_on:
       - db
