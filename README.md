@@ -10,8 +10,4 @@ Deploy ChiefOnboarding server with CI/CD on Elestio
 
 # Once deployed ...
 
-You can can open ChiefOnboarding UI here:
-
-    URL: https://[CI_CD_DOMAIN]
-    email: [ADMIN_EMAIL]
-    password: [ADMIN_PASSWORD]
+You'll have to register for using the software.
