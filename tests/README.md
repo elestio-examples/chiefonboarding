@@ -36,6 +36,11 @@ Copy the .env file from tests folder to the project directory
 
 Edit the .env file with your own values.
 
+Create data folders with correct permissions
+
+    mkdir -p ./data
+    chown -R 1000:1000 ./data
+
 Run the project with the following command
 
     docker-compose up -d
@@ -46,7 +51,7 @@ You can access the Web UI at: `http://your-domain:7972`
 
 Here are some example snippets to help you get started creating a container.
 
-    version: "3"
+    version: "3.3"
 
     services:
     db:
@@ -91,8 +96,8 @@ Here are some example snippets to help you get started creating a container.
 |   ADMIN_PASSWORD   |    xxxx-xxxx-xxxx    |
 |      ANYMAIL       |         True         |
 | DEFAULT_FROM_EMAIL | admin@vm.elestio.app |
-|     EMAIL_HOST     |      your-host       |
-|     EMAIL_PORT     |        [PORT]        |
+|     EMAIL_HOST     |      172.17.0.1      |
+|     EMAIL_PORT     |          25          |
 |   EMAIL_USE_TLS    |        False         |
 |   EMAIL_USE_SSL    |        False         |
 
