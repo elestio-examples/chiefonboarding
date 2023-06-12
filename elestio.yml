@@ -32,7 +32,8 @@ environments:
     value: "False"
   - key: "EMAIL_USE_SSL"
     value: "False"
-
+  - key: "SOFTWARE_VERSION_TAG"
+    value: "latest"
 config:
   runTime: "dockerCompose"
   version: ""
