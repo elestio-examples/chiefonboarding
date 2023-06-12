@@ -12,7 +12,7 @@ services:
       - POSTGRES_PASSWORD=postgres
 
   app:
-    image: chiefonboarding/chiefonboarding:latest
+    image: chiefonboarding/chiefonboarding:${SOFTWARE_VERSION_TAG}
     restart: always
     ports:
       - "172.17.0.1:8888:8000"
