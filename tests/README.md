@@ -45,7 +45,7 @@ Run the project with the following command
 
     docker-compose up -d
 
-You can access the Web UI at: `http://your-domain:7972`
+You can access the Web UI at: `http://your-domain:8888`
 
 ## Docker-compose
 
@@ -58,33 +58,33 @@ Here are some example snippets to help you get started creating a container.
         image: postgres:14
         restart: always
         volumes:
-        - ./data:/var/lib/postgresql/data
+          - ./data:/var/lib/postgresql/data
         environment:
-        - POSTGRES_DB=chiefonboarding
-        - POSTGRES_USER=postgres
-        - POSTGRES_PASSWORD=postgres
+          - POSTGRES_DB=chiefonboarding
+          - POSTGRES_USER=postgres
+          - POSTGRES_PASSWORD=postgres
 
     app:
         image: elestio4test/chiefonboarding:latest
         restart: always
         ports:
-        - "172.17.0.1:8888:8000"
+          - "172.17.0.1:8888:8000"
         environment:
-        - SECRET_KEY=${SECRET_KEY}
-        - DATABASE_URL=postgres://postgres:postgres@db:5432/chiefonboarding
-        - ALLOWED_HOSTS=${DOMAIN}
-        - ACCOUNT_EMAIL=${ADMIN_EMAIL}
-        - ACCOUNT_PASSWORD=${ADMIN_PASSWORD}
-        - ANYMAIL=${ANYMAIL}
-        - DEFAULT_FROM_EMAIL=${DEFAULT_FROM_EMAIL}
-        - EMAIL_HOST=${EMAIL_HOST}
-        - EMAIL_PORT=${EMAIL_PORT}
-        - EMAIL_HOST_USER=${EMAIL_HOST_USER}
-        - EMAIL_HOST_PASSWORD=${EMAIL_HOST_PASSWORD}
-        - EMAIL_USE_TLS=${EMAIL_USE_TLS}
-        - EMAIL_USE_SSL=${EMAIL_USE_SSL}
+          - SECRET_KEY=${SECRET_KEY}
+          - DATABASE_URL=postgres://postgres:postgres@db:5432/chiefonboarding
+          - ALLOWED_HOSTS=${DOMAIN}
+          - ACCOUNT_EMAIL=${ADMIN_EMAIL}
+          - ACCOUNT_PASSWORD=${ADMIN_PASSWORD}
+          - ANYMAIL=${ANYMAIL}
+          - DEFAULT_FROM_EMAIL=${DEFAULT_FROM_EMAIL}
+          - EMAIL_HOST=${EMAIL_HOST}
+          - EMAIL_PORT=${EMAIL_PORT}
+          - EMAIL_HOST_USER=${EMAIL_HOST_USER}
+          - EMAIL_HOST_PASSWORD=${EMAIL_HOST_PASSWORD}
+          - EMAIL_USE_TLS=${EMAIL_USE_TLS}
+          - EMAIL_USE_SSL=${EMAIL_USE_SSL}
         depends_on:
-        - db
+          - db
 
 ### Environment variables
 
@@ -138,6 +138,6 @@ That's it! With these simple steps, you can easily backup and restore your data 
 
 - <a target="_blank" href="https://docs.chiefonboarding.com/">ChiefOnboarding documentation</a>
 
-- <a target="_blank" href="hthttps://github.com/chiefonboarding/ChiefOnboarding">ChiefOnboarding Github repository</a>
+- <a target="_blank" href="https://github.com/chiefonboarding/ChiefOnboarding">ChiefOnboarding Github repository</a>
 
 - <a target="_blank" href="https://github.com/elestio-examples/chiefonboarding">Elestio/chiefonboarding Github repository</a>
