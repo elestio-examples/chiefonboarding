@@ -2,7 +2,7 @@ version: "3.3"
 
 services:
   db:
-    image: postgres:14
+    image: elestio/postgres:14
     restart: always
     volumes:
       - ./data:/var/lib/postgresql/data
